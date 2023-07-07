@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contatos</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dhurjati&family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+            <header>
+                <button id="ModoClaro" onclick="clicar()">Modo Claro</button>
+                <button id="ModoEscuro" onclick="clicar2()">Modo Escuro</button> 
+                <h1>
+                    Agenda de contatos
+                    <img src="./contato.png" id="ImgCTT">
+                </h1>
+                
+            </header>    
+            <div class="container">
+                <form id="form-agenda">
+                    <input type="text" name="Nome" id="Nome" required placeholder="Nome ou apelido">
+                    <input type="number" name="Numero" id="Numero" required placeholder="Telefone com DDD">
+                    <button type="submit" name="Botao" id="Botao">Adicionar</button>
+                </form>
+                <h2 id="header2">Nome⠀⠀⠀⠀⠀⠀⠀Numero</h2>
+                <table>
+                    <tbody id="tabela-corpo">
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td id="td1"></td>
+                            <td id="td2"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <script src="./main.js"></script>
+</body>
+</html>
